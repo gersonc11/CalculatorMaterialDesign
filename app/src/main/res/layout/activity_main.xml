@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constrainedHeight="true"
+        android:text="@string/one"
+        app:layout_constraintBottom_toBottomOf="@id/guideline5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline4" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/two"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/two"
+    app:layout_constraintBottom_toBottomOf="@id/guideline5"
+    app:layout_constraintLeft_toRightOf="@id/one"
+    app:layout_constraintRight_toLeftOf="@id/three"
+    app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/three"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/three"
+    app:layout_constraintBottom_toBottomOf="@id/guideline5"
+    app:layout_constraintLeft_toRightOf="@id/two"
+    app:layout_constraintRight_toLeftOf="@id/plus"
+    app:layout_constraintTop_toBottomOf="@id/guideline4" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/four"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/four"
+    app:layout_constraintBottom_toBottomOf="@id/guideline4"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/five"
+    app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/five"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/five"
+    app:layout_constraintBottom_toBottomOf="@id/guideline4"
+    app:layout_constraintLeft_toRightOf="@id/four"
+    app:layout_constraintRight_toLeftOf="@id/six"
+    app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/six"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/six"
+    app:layout_constraintBottom_toBottomOf="@id/guideline4"
+    app:layout_constraintLeft_toRightOf="@id/five"
+    app:layout_constraintRight_toLeftOf="@id/minus"
+    app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/seven"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/seven"
+    app:layout_constraintBottom_toBottomOf="@id/guideline3"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/eight"
+    app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/eight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/eight"
+    app:layout_constraintBottom_toBottomOf="@id/guideline3"
+    app:layout_constraintLeft_toRightOf="@id/seven"
+    app:layout_constraintRight_toLeftOf="@id/nine"
+    app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/nine"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/nine"
+    app:layout_constraintBottom_toBottomOf="@id/guideline3"
+    app:layout_constraintLeft_toRightOf="@id/eight"
+    app:layout_constraintRight_toLeftOf="@id/times"
+    app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/zero"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/zero"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/dot"
+    app:layout_constraintTop_toTopOf="@id/guideline5" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/plus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/plus"
+    app:layout_constraintBottom_toBottomOf="@id/guideline5"
+    app:layout_constraintLeft_toRightOf="@id/three"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/guideline4" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/minus"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/minus"
+    app:layout_constraintBottom_toBottomOf="@id/guideline4"
+    app:layout_constraintLeft_toRightOf="@id/six"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/guideline3" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/times"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/multiply"
+    app:layout_constraintBottom_toBottomOf="@id/guideline3"
+    app:layout_constraintLeft_toRightOf="@id/nine"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/guideline2" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/divide"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/divide"
+    app:layout_constraintBottom_toBottomOf="@id/guideline2"
+    app:layout_constraintLeft_toRightOf="@id/percent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/negative"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/negative"
+    app:layout_constraintBottom_toBottomOf="@id/guideline2"
+    app:layout_constraintLeft_toRightOf="@id/clear"
+    app:layout_constraintRight_toLeftOf="@id/percent"
+    app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/clear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/clear"
+    app:layout_constraintBottom_toBottomOf="@id/guideline2"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/negative"
+    app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/dot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/dot"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/zero"
+    app:layout_constraintRight_toLeftOf="@id/equals"
+    app:layout_constraintTop_toTopOf="@id/guideline5" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/equals"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/equals"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@id/dot"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/guideline5" />
+
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/percent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/divide"
+    app:layout_constraintBottom_toBottomOf="@id/guideline2"
+    app:layout_constraintLeft_toRightOf="@id/negative"
+    app:layout_constraintRight_toLeftOf="@id/divide"
+    app:layout_constraintTop_toTopOf="@id/guideline1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
